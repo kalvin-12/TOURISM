@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Destinasi</title>
-    <link rel="shortcut icon" href="asset/favicon.png">
+    <link rel="shortcut icon" href="{{ asset ('css/assets')}}/favicon.png">
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -40,15 +40,15 @@
             alt=""
         /></a>
         <ul class="nav-link">
-          <li class="nav-item2"><a href="index.html">Beranda</a></li>
-          <li class="nav-item2"><a href="destinasi.html">Destinasi</a></li>
-          <li class="nav-item2"><a href="kulinersurabaya.html">Kuliner</a></li>
+          <li class="nav-item2"><a href="{{ route('beranda') }}">Beranda</a></li>
+          <li class="nav-item2"><a href="{{ route('destinasi') }}">Destinasi</a></li>
+          <li class="nav-item2"><a href="{{ route('kuliner') }}">Kuliner</a></li>
           <li class="nav-item2"><a href="#">Login</a></li>
         </ul>
       </nav>
     </header>
     <div class="destinasi-nav">
-      <p><a href="index.html">Beranda</a> > Destinasi Wisata</p>
+      <p><a href="{{ route('beranda') }}">Beranda</a> > Destinasi Wisata</p>
     </div>
     <div class="destinasi-judul">
       <h2>DESTINASI WISATA</h2>

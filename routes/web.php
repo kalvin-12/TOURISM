@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\DestinasiPageController;
+use App\Http\Controllers\BerandaPageController;
+use App\Http\Controllers\KulinerPageController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +17,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('beranda');
 });
+
+Route::get('destinasi', [DestinasiPageController::class, 'destinasi'])->name('destinasi');
+Route::get('beranda', [BerandaPageController::class, 'beranda'])->name('beranda');
+Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');
