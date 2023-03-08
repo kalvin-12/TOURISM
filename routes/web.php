@@ -3,6 +3,7 @@
 use App\Http\Controllers\DestinasiPageController;
 use App\Http\Controllers\BerandaPageController;
 use App\Http\Controllers\KulinerPageController;
+use App\Http\Controllers\MuseumPendidikanController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,6 +21,11 @@ Route::get('/', function () {
     return view('beranda');
 });
 
+// Page
+
 Route::get('destinasi', [DestinasiPageController::class, 'destinasi'])->name('destinasi');
 Route::get('beranda', [BerandaPageController::class, 'beranda'])->name('beranda');
 Route::get('kuliner', [KulinerPageController::class, 'kuliner'])->name('kuliner');
+
+// content beranda
+Route::get('museumpendidikan', [MuseumPendidikanController::class, 'museumpendidikan'])->name('museumpendidikan');

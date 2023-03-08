@@ -41,9 +41,9 @@
             <span class="garis"></span>
           </a>
           <ul class="menuzord-menu menuzord-right">
-            <li class="active"><a href="{{ route('beranda') }}">HOME</a></li>
-            <li><a href="{{ route('destinasi') }}">DESTINASI</a></li>
-            <li><a href="{{ route('kuliner') }}">KULINER</a></li>
+            <li class="active"><a href="{{ route('beranda') }}">Home</a></li>
+            <li><a href="{{ route('destinasi') }}">Destinasi</a></li>
+            <li><a href="{{ route('kuliner') }}">Kuliner</a></li>
             <li><a href="#">Login</a></li>
           </ul>
         </div>
@@ -63,15 +63,15 @@
             called City of Heroes</span
           >
           <div class="icon">
-            <a class="a1" href=""
+            <a class="a1" href="{{ route('destinasi') }}"
               ><i class="fa-solid fa-map-location-dot"></i><br />
               Destinasi <br />
               Wisata</a
             >
-            <a class="a1" href=""
-              ><i class="fa fa-fw fa-dungeon"></i> <br />
-              Cagar <br />
-              Budaya</a
+            <a class="a1" href="{{ route('kuliner') }}"
+              ><i class="fa fa-fw fa-utensils"></i> <br />
+              Kuliner <br />
+              Surabaya</a
             >
             <a class="a1" href=""
               ><i class="fa fa-fw fa-bullhorn"></i> <br />

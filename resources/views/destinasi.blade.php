@@ -242,7 +242,7 @@
     <div class="row">
       <div class="col-md-4 text-center my-2">
         <a
-          href="museum pendidikan.html"
+          href="{{ route('museumpendidikan') }}"
         >
           <img
             class="img-fluid"
@@ -424,7 +424,7 @@
       </div>
     </div>
 
-    <div class="nav-list-page">
+    {{-- <div class="nav-list-page">
       <nav>
         <ul class="pagination">
           <li class="page-item">
@@ -473,7 +473,7 @@
           </li>
         </ul>
       </nav>
-    </div>
+    </div> --}}
 
     <div class="kosong"> <br> </div>
 
